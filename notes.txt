@@ -1,10 +1,54 @@
 Notes Section
 
-Callbacks:
-- callback functions are functions passed into other functions as arguments
+Callbacks Lambda Exlplanation:
 
-- example: const functionFeeder = function(callback) {
+- callback functions are functions passed into other functions as arguments
+- example 1: const functionFeeder = function(callback) {
   callback('Hello from the inside of Function Feeder');
 };
-    - here, we defined "functionFeeder" as the function and gave it a paramter called "callback"
-    
+    - here, we defined functionFeeder as the function and gave it a paramter called "callback"
+    - this means that when we invoke functionFeeder we can give it another function as an argument (that's why between the curly brackets 
+    it says "callback")
+    - in this example the function that we call will feed the string 'Hello from the inside' to the callback function we want to use
+- example 1 extended: functionFeeder((string) => { // invoking the function
+  alert(string); // alert a function that pops up a box in the browser.
+});
+    - in this situation we are telling functionFeeder to alert (this is also a Javascript command!) the string we give it
+    - the "functionFeeder(string)" is what we use to invoke the function
+- example 2:  function sayHello(name) {
+    console.log(`Hello, ${name}`);
+  }
+    - because we want to use this function over and over again, it is appropriate to use the callback method
+- example 2 extended:  function callSayHelloWithLars(callback) {
+    const innerName = 'Lars';
+    callback(innerName);
+  }
+    - here we made a new function that allowed us to use the first function again
+    - I'm not sure why the callback is in parentheses... is this just for the example or a coding standard?
+- example 2 extended: callSayHelloWithLars(sayHello);
+    - to finish, we need to invoke the function so it can perform the callback 
+
+Example 3 Lambda: 
+- setup: const elements = ['earth', 'wind', 'fire', 'water'];
+
+- "create a function that passes back the first item in an array":
+function showFirst(array, callback) {
+  callback(array[0]);
+}
+showFirst(elements, (firstItem) => {
+  alert(firstItem);
+});
+
+function showLength(array, callback) {
+  callback(array.length);
+}
+showLength(elements, (length) => {
+  alert(length);
+});
+
+elements.forEach(element => alert(element));
+
+const newArray = elements.map(item => 'Element: ' + item);
+
+
+

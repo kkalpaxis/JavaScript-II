@@ -26,12 +26,12 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 function getLength(arr, cb) {
-  return items.length;
+  callback(array[i]);
 }
 
-getLength(items, function(length) {
-  console.log(length)
-})
+getLength(items, (arrLength) => {
+  console.log(items.length)
+});
 
 getLength(items);
 
