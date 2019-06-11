@@ -44,7 +44,11 @@ showFirst(elements, (firstItem) => {
 ** Taking notes here is ineffective. Will post links I used instead. **
 
 LINKS:
-- https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced 
-- 
+- Callbacks in general: https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced 
+- Challenge 5 new concept: indexOf
+    - https://stackoverflow.com/questions/14461450/check-if-string-inside-an-array-javascript
+    - https://appdividend.com/2018/12/19/javascript-array-indexof-example-tutorial/
+    - https://www.w3schools.com/jsref/jsref_indexof_array.asp
+
 
 

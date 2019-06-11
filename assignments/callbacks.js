@@ -61,10 +61,16 @@ multiplyNums(5, 10, (numMultiply) => {
   console.log(numMultiply);
 });
 
-function contains(item, list, cb) {
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
+
+// Challenge 5: contains checks if an item is present inside of the given array/list
+// Pass true to the callback if it is, otherwise pass false.
+// The method I used below doesn't use callbacks. After I complete MVP I will go back and try to write another function. 
+function contains (items, object, cb) {
+  return items.indexOf(object) > -1;
 }
+console.log(contains(items, 'Pencil'));
+
+
 
 /* STRETCH PROBLEM */
 
