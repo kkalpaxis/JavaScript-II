@@ -58,9 +58,8 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 // Combine both the first and last names into a new array called fullName. 
 let fullName = [];
 
-runners.forEach(function(first_name, last_name) {
-    let i = 0;
-    fullName.push(runners.first_name + ' ' + runners.last_name);
+runners.forEach(function(currentValue) {
+    fullName.push(currentValue.first_name + ' ' + currentValue.last_name);
 });
 
 console.log(fullName);
