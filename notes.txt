@@ -41,6 +41,8 @@ showFirst(elements, (firstItem) => {
 
 - is this it? how do I call the function? what goes in the paramters?
 
+** Taking notes here is ineffective. Will post links I used instead. **
+
 LINKS:
 - https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced 
 - 

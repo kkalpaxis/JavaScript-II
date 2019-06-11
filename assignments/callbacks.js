@@ -24,7 +24,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 */
 
-// getLength passes the length of the array into the callback.
+// Challenge 1: getLength passes the length of the array into the callback.
 
 function getLength (arr, cb) {
   cb(arr.length);
@@ -34,13 +34,18 @@ getLength(items, (length) => {
   console.log(length);
 });
 
-// last passes the last item of the array into the callback.
+// Challenge 2: last passes the last item of the array into the callback.
 function last(arr, cb) {
-  
+  cb(arr[arr.length - 1]);
 }
 
+last(items, (last) => {
+  console.log(last);
+});
+
+// Challenge 3: sumNums adds two numbers (x, y) and passes the result to the callback.
 function sumNums(x, y, cb) {
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
+  
 }
 
 function multiplyNums(x, y, cb) {
