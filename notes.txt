@@ -39,16 +39,10 @@ showFirst(elements, (firstItem) => {
   alert(firstItem);
 });
 
-function showLength(array, callback) {
-  callback(array.length);
-}
-showLength(elements, (length) => {
-  alert(length);
-});
+- is this it? how do I call the function? what goes in the paramters?
 
-elements.forEach(element => alert(element));
-
-const newArray = elements.map(item => 'Element: ' + item);
-
+LINKS:
+- https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced 
+- 
 
 
