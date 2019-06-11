@@ -1,0 +1,10 @@
+Notes Section
+
+Callbacks:
+- callback functions are functions passed into other functions as arguments
+
+- example: const functionFeeder = function(callback) {
+  callback('Hello from the inside of Function Feeder');
+};
+    - here, we defined "functionFeeder" as the function and gave it a paramter called "callback"
+    
