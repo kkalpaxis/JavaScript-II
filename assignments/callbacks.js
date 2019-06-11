@@ -52,10 +52,14 @@ sumNums(5, 10, (addNums) => {
 });
 
 
-
+// Challenge 4: multiplyNums multiplies two numbers and passes the result to the callback.
 function multiplyNums(x, y, cb) {
-  // multiplyNums multiplies two numbers and passes the result to the callback.
+  let multiply = x * y;
+  cb(multiply);
 }
+multiplyNums(5, 10, (numMultiply) => {
+  console.log(numMultiply);
+});
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
