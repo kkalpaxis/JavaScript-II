@@ -73,18 +73,18 @@ runners.map(currentValue => {
 console.log(allCaps);
 
 
-
-
-
-
-
-
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  
 // Get a list of runners with large sized shirts so they can choose a different size. 
 // Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
 let largeShirts = [];
+runners.filter((currentValue) => {
+    if(currentValue.shirt_size === "L") {
+        largeShirts.push(currentValue.first_name + ' ' + currentValue.last_name);
+    }
+});
 console.log(largeShirts);
+
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. 
