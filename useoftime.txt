@@ -1,0 +1,11 @@
+Hi, Brandon. I'm having a lot of trouble getting used to this concept so I don't know how much I'll be able to finish of the project.
+Here is a time log so you get an idea of what I've done today.
+
+Time Log:
+3:00-4:00 Review TK examples and videos (again!)
+4:00-4:45 Read and take notes on other resources (in notes.txt file)
+4:45-5:15 Did callback challenges 1-4
+5:15-6:00 Solved Challenge 5 but wasn't sure if it was the correct way. Tried to find a solution that used callbacks but in the 
+interest of time, moved on.
+6:00-6:45 Attempted Challenge 1 of Array Methods
+
