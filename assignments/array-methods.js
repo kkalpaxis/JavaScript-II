@@ -86,8 +86,7 @@ console.log(allCaps);
 let largeShirts = runners
 .filter((currentValue) => {
     return currentValue.shirt_size === "L"
-    }
-);
+});
 console.log(largeShirts);
 
 
@@ -107,8 +106,23 @@ console.log(ticketPriceTotal);
 // I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  
 // Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// Problem 1
+// Problem 1: We have extra stickers from the event! Those who donated over $100 are eligible to receive them. We need to find those donors.
+let topDonors = runners
+.filter((currentValue) => {
+    return currentValue.donation >= 100
+});
+console.log(topDonors);
 
-// Problem 2
+// Problem 2: We need to isolate the runners with last names that start with A-M. They will be in the first heat. (will work on later)
+//function filter(letter) {
+//   var results = [];
+//   for (var i = 0; i < runners.length; i++) {
+//      if (runners[i].indexOf(letter) == 0) results.push(runners[i]);
+//   }
+//  return results;
+// }
+
+console.log(results);
+
 
 // Problem 3
